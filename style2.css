@@ -1,0 +1,62 @@
+/* Flexbox */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    width: 800px;
+    padding: 2px;
+    margin: 2px;
+}
+
+header {
+    background-color: violet;
+    flex-grow: 1;
+    padding: 50px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+aside {
+    background-color: blue;
+    padding: 70px 0;
+}
+
+nav {
+    background-color: red;
+    padding: 100px 0;
+}
+
+main {
+    background-color: green;
+    flex-grow: 1.5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: brown;
+    padding: 30px 0;
+}
